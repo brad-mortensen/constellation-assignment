@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/form.css";
 
 import { Button, Checkbox, Input, Page, Radio, Select } from "react-onsenui";
 
@@ -15,20 +16,25 @@ const Form = ({
   setSelect
 }) => (
   <Page modifier="material">
-    <form>
+    <form className="form">
+      <label htmlFor="text">Input Text:</label>
       <Input
-        float
+        id="text"
         onChange={e => setInputText(e.target.value)}
         modifier="material"
         placeholder="Input Text"
       />
+      <label>Input Date:</label>
       <Input
+        id="date"
         type="date"
         float
         onChange={e => setDate(e.target.value)}
         modifier="material"
       />
+      <label>Opt In?:</label>
       <Checkbox modifier="material" onChange={() => setCheck(!check)} />
+      <label>Choose Radio:</label>
       {radioOptions.map((option, i) => (
         <Radio
           key={i}
@@ -38,6 +44,7 @@ const Form = ({
           modifier="material"
         />
       ))}
+      <label>Select Option:</label>
       <Select
         modifier="material"
         value={select}

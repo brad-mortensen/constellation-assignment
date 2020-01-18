@@ -48,7 +48,7 @@ const App = () => {
           {
             content: (
               <Display
-                key={1}s
+                key={1}
                 active={currentIndex === 1}
                 inputText={inputText}
                 date={date}
