@@ -1,14 +1,22 @@
 import React from "react";
+import "../styles/display.css";
 
 import { Page } from "react-onsenui";
 
 const Display = ({ inputText, date, radio, check, select }) => (
   <Page>
-    {inputText}
-    {date}
-    {radio}
-    {check}
-    {select}
+    <div className="display">
+      <label className="label">Text:</label>
+      {inputText}
+      <label className="label">Date:</label>
+      {date}
+      <label className="label">Radio:</label>
+      {radio}
+      <label className="label">Opted?:</label>
+      {check}
+      <label className="label">Option:</label>
+      {select === "Select A Value" ? "" : select}
+    </div>
   </Page>
 );
 

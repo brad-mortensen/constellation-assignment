@@ -17,24 +17,23 @@ const Form = ({
 }) => (
   <Page modifier="material">
     <form className="form">
-      <label htmlFor="text">Input Text:</label>
+      <label className="label">Input Text:</label>
       <Input
         id="text"
         onChange={e => setInputText(e.target.value)}
         modifier="material"
         placeholder="Input Text"
       />
-      <label>Input Date:</label>
+      <label className="label">Input Date:</label>
       <Input
         id="date"
         type="date"
-        float
         onChange={e => setDate(e.target.value)}
         modifier="material"
       />
-      <label>Opt In?:</label>
+      <label className="label">Opt In?:</label>
       <Checkbox modifier="material" onChange={() => setCheck(!check)} />
-      <label>Choose Radio:</label>
+      <label className="label">Choose Radio:</label>
       {radioOptions.map((option, i) => (
         <Radio
           key={i}
@@ -42,9 +41,11 @@ const Form = ({
           value={option}
           onChange={e => setRadio(e.target.value)}
           modifier="material"
-        />
+        >
+          {option}
+        </Radio>
       ))}
-      <label>Select Option:</label>
+      <label className="label">Select Option:</label>
       <Select
         modifier="material"
         value={select}
@@ -54,7 +55,7 @@ const Form = ({
         <option value="2">2nd</option>
         <option value="3">3rd option</option>
       </Select>
-      <Button
+      {/* <Button
         modifier="cta"
         type="submit"
         ripple
@@ -63,7 +64,7 @@ const Form = ({
         }}
       >
         View Data
-      </Button>
+      </Button> */}
     </form>
   </Page>
 );

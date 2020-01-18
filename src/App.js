@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Page, Button, Tabbar, Tab } from "react-onsenui";
-
+import "./app.css";
 import Form from "./components/Form";
 import Display from "./components/Display";
 
@@ -15,7 +15,7 @@ const App = () => {
   const radioOptions = ["First", "Second", "Third"];
 
   return (
-    <Page>
+    <div className="app">
       <Tabbar
         onPreChange={() => {
           setCurrentIndex(currentIndex === 0 ? 1 : 0);
@@ -61,7 +61,7 @@ const App = () => {
           }
         ]}
       />
-    </Page>
+    </div>
   );
 };
 
