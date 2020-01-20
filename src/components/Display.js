@@ -13,7 +13,7 @@ const Display = ({ inputText, date, radio, check, select }) => (
       <label className="label">Radio:</label>
       {radio}
       <label className="label">Opted?:</label>
-      {check}
+      <h1>{check}</h1>
       <label className="label">Option:</label>
       {select === "Select A Value" ? "" : select}
     </div>

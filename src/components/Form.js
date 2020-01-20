@@ -32,7 +32,10 @@ const Form = ({
         modifier="material"
       />
       <label className="label">Opt In?:</label>
-      <Checkbox modifier="material" onChange={() => setCheck(!check)} />
+      <Checkbox
+        modifier="material"
+        onChange={() => setCheck(check === "out" ? "in" : "out")}
+      />
       <label className="label">Choose Radio:</label>
       {radioOptions.map((option, i) => (
         <Radio
