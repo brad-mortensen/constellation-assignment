@@ -4,7 +4,7 @@ import "../styles/display.css";
 import { Page } from "react-onsenui";
 
 const Display = ({ inputText, date, radio, check, select }) => (
-  <Page>
+  <Page id="display">
     <div className="display">
       <label className="label">Text:</label>
       {inputText}

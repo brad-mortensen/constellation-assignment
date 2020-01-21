@@ -1,12 +1,62 @@
 .form {
+  position: relative;
   display: flex;
   flex-flow: column;
-  align-items: center;
-  width: 50%;
-  background-color: white;
-  margin: 50px 25%;
-  padding: 30px 0;
+  align-items: flex-start;
+  background-color: #eceff1;
+  width: 100%;
+  padding: 0 10%;
 }
-.label {
-  width: 50%;
+
+.form h1 {
+  margin: 40px 0;
+  font-family: 'Alata', sans-serif;
+  width: 100%;
+  text-align: left;
+  font-size: 3em;
+}
+
+.form .label {
+  font-family: 'Alata', sans-serif;
+  font-size: 1em;
+}
+#text {
+  width: 100%;
+  margin: 20px 0;
+}
+#date {
+  width: 100%;
+  width: 100%;
+  margin: 20px 0;
+}
+#radio-section {
+  width: 100%;
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+#select {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.check-container {
+  width: 100%;
+}
+
+#check {
+  margin-left: 20px;
+}
+
+.submit {
+  margin-top: 40px;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-family: 'Alata', sans-serif;
 }
