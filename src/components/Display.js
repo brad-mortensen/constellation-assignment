@@ -3,19 +3,28 @@ import "../styles/display.css";
 
 import { Page } from "react-onsenui";
 
+const defaultMessage = <span className="default">No Response Given</span>;
+
 const Display = ({ inputText, date, radio, check, select }) => (
-  <Page id="display">
+  <Page>
     <div className="display">
-      <label className="label">Text:</label>
-      {inputText}
-      <label className="label">Date:</label>
-      {date}
-      <label className="label">Radio:</label>
-      {radio}
-      <label className="label">Opted?:</label>
-      <h1>{check}</h1>
-      <label className="label">Option:</label>
-      {select === "Select A Value" ? "" : select}
+      <h1>Profile</h1>
+      <label className="label">Email</label>
+      <p className="data">{inputText || defaultMessage}</p>
+      <label className="label">Birthday</label>
+      <p className="data">{date || defaultMessage}</p>
+      <label className="label">Subscription Type</label>
+      <p className="data">{radio || defaultMessage}</p>
+      <label className="label">Subscription Length</label>
+      <p className="data">
+        {!select
+          ? defaultMessage
+          : select === "Select A Value"
+          ? defaultMessage
+          : select}
+      </p>
+      <label className="label">Receive Email Updates</label>
+      <p className="data">{check || defaultMessage}</p>
     </div>
   </Page>
 );

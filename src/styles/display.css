@@ -1,9 +1,25 @@
 .display {
   display: flex;
   flex-flow: column;
-  align-items: center;
-  width: 100%;
+  align-items: flex-start;
+  background-color: #eceff1;
+  padding: 0 10%;
 }
-.label {
-  width: 50%;
+
+.display h1 {
+  margin: 25px 0;
+  font-family: 'Alata', sans-serif;
+  width: 100%;
+  text-align: left;
+  font-size: 3em;
+}
+.display .label {
+  font-family: 'Alata', sans-serif;
+  font-size: 1em;
+  text-transform: lowercase;
+}
+.display .data {
+  width: 100%;
+  margin: 20px 0;
+  font-size: 1.1em;
 }

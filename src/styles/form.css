@@ -1,5 +1,4 @@
 .form {
-  position: relative;
   display: flex;
   flex-flow: column;
   align-items: flex-start;
@@ -9,7 +8,7 @@
 }
 
 .form h1 {
-  margin: 40px 0;
+  margin: 25px 0;
   font-family: 'Alata', sans-serif;
   width: 100%;
   text-align: left;
@@ -23,6 +22,7 @@
 #text {
   width: 100%;
   margin: 20px 0;
+  font-size: 2em;
 }
 #date {
   width: 100%;
@@ -59,4 +59,18 @@
   align-items: center;
   font-size: 2rem;
   font-family: 'Alata', sans-serif;
+}
+
+.default {
+  color: grey;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  width: 100%;
+  height: 60px;
+  margin-top: 40px;
 }
