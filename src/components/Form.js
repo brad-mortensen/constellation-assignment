@@ -36,7 +36,7 @@ const Form = ({
         onChange={e => setDate(e.target.value)}
         modifier="material"
       />
-      <label className="label">Subscription Type</label>
+      <label className="label">Subscription Length</label>
       <div id="radio-section">
         {radioOptions.map((option, i) => (
           <Radio
